@@ -1,0 +1,19 @@
+assignment 10 jacob okoshi
+
+1. have the priority queue start with the most expensive edges instead of the least
+
+2. A MST just gives a list of the cheapest edges that connect all vertecies, where as the TSP wants the path formed by the edges to be the smallest one possible, 
+as such if you were to trace the path, the TSP cares about inefficiencies like back-tracking while the MST does not
+
+3. 
+		Seattle		San Fran	LA	Riverside	Pheonix
+Seattle		n/a		678		n/a	n/a		n/a
+San Fran	678		n/a		348	386		n/a
+La		n/a		348		n/a	50		357
+Riverside	n/a		386		50	n/a		307
+Pheonix		n/a		n/a		357	307		n/a
+4. the time complexity of jarnik's algorithm with a PQ is O(|Edges|log|Vertecies|), whereas searching through an adjacency matrix yeilds O(|Vertecies|^2) the difference comes from having to search for the lowest cost edges among all the vertecies.
+5. Jarnik's algorithm is a greedy algorithm because it only accepts the best solutions from the start
+
+6. The Floyd-Warshall algorithm finds the shortest path in a directed weighted graph that contains positive or negative edge weights. Robert Floyd published the algorithm in its current form in 1962, however it is apparently equivalent to an algorithm published by Benard Roy in 1959, 
+and even in the same year an algorithm published by Stephen Warshall that was used to find the "transitive closure of a graph". 
